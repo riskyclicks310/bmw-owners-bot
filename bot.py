@@ -1,3 +1,4 @@
+import os
 import discord
 from discord import app_commands
 
@@ -32,3 +33,4 @@ async def owners(interaction: discord.Interaction, model: str):
     )
 
 client.run(TOKEN)
+
