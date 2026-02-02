@@ -2,7 +2,7 @@ import os
 import discord
 from discord import app_commands
 
-TOKEN = "MTQ2NzkzMDIwMDk5NzEwMTgzMA.GixZap.4IRqJdlR-_giBVRdlCRYjiYcQviu5B2jdTtPbE"
+TOKEN = os.getenv("TOKEN")
 
 class Client(discord.Client):
     def __init__(self):
@@ -33,4 +33,5 @@ async def owners(interaction: discord.Interaction, model: str):
     )
 
 client.run(TOKEN)
+
 
